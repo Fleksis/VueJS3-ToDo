@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'SF-Pro-Display';
+    /*src: url("fonts/SFPRODISPLAYREGULAR.OTF") format('truetype');*/
+    src: url("src/assets/fonts/SFPRODISPLAYREGULAR.OTF") format('truetype');
+}
