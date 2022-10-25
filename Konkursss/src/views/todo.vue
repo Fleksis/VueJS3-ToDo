@@ -7,83 +7,33 @@
     <div id="task-container">
       <div>
         <p>Backlog</p>
-        <draggable
-          v-model="backlog"
-          group="tasks"
-          @start="drag = true"
-          @end="drag = false"
-          item-key="id"
-        >
+        <draggable v-model="backlog" group="tasks" @start="drag = true" @end="drag = false" item-key="id">
           <template #item="{ element }">
-            <div>
-              <TaskComponent
-                :title="element.title"
-                :description="element.description"
-                :color="element.color"
-                :label="element.label"
-              />
-            </div>
+            <TaskComponent :title="element.title" :description="element.description" :color="element.color" :label="element.label"/>
           </template>
         </draggable>
       </div>
       <div>
         <p>To do</p>
-        <draggable
-          v-model="todo"
-          group="tasks"
-          @start="drag = true"
-          @end="drag = false"
-          item-key="id"
-        >
+        <draggable v-model="todo" group="tasks" @start="drag = true" @end="drag = false" item-key="id">
           <template #item="{ element }">
-            <div>
-              <TaskComponent
-                :title="element.title"
-                :description="element.description"
-                :color="element.color"
-                :label="element.label"
-              />
-            </div>
+            <TaskComponent :title="element.title" :description="element.description" :color="element.color" :label="element.label"/>
           </template>
         </draggable>
       </div>
       <div>
         <p>In progress</p>
-        <draggable
-          v-model="inProgress"
-          group="tasks"
-          @start="drag = true"
-          @end="drag = false"
-          item-key="id"
-        >
+        <draggable v-model="inProgress" group="tasks" @start="drag = true" @end="drag = false" item-key="id">
           <template #item="{ element }">
-            <div>
-              <TaskComponent
-                :title="element.title"
-                :description="element.description"
-                :color="element.color"
-                :label="element.label"
-              />
-            </div>
+            <TaskComponent :title="element.title" :description="element.description" :color="element.color" :label="element.label"/>
           </template>
         </draggable>
       </div>
       <div>
         <p>Designed</p>
-        <draggable
-          v-model="designed"
-          group="tasks"
-          @start="drag = true"
-          @end="drag = false"
-          item-key="id"
-        >
+        <draggable v-model="designed" group="tasks" @start="drag = true" @end="drag = false" item-key="id">
           <template #item="{ element }">
-            <TaskComponent
-              :title="element.title"
-              :description="element.description"
-              :color="element.color"
-              :label="element.label"
-            />
+            <TaskComponent :title="element.title" :description="element.description" :color="element.color" :label="element.label" />
           </template>
         </draggable>
       </div>
@@ -122,7 +72,7 @@ export default {
         {
           id: 1,
           title: "Tablet view",
-          description: "asd2",
+          description: "",
           color: "#D93535",
           label: "",
         },
