@@ -129,6 +129,7 @@ export default {
 #task-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 24px;
 }

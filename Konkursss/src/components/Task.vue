@@ -1,8 +1,8 @@
 <template>
   <div ref="task" id="task">
-    <p>{{ title }}</p>
-    <p>{{ description }}</p>
-    <LabelsComponent  :title="label" />
+    <h5>{{ title }}</h5>
+    <p v-show="description">{{ description }}</p>
+    <LabelsComponent :title="label" />
   </div>
 </template>
 
@@ -27,14 +27,16 @@ export default {
   border-radius: 8px;
 }
 
-#task > p {
+#task > p,
+#task > h5 {
   margin: 0;
 }
 
-#task > p:first-child {
+#task > h5:first-child {
   color: white;
   font-family: SF-Pro-Display-Bold;
-  line-height: 150%;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 #task > p:nth-child(2) {
