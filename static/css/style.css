@@ -25,10 +25,14 @@ body, html {
     font-family: SF-Pro-Display-Bold;
 }
 
-#title-container > p {
-    margin: 0;
+#title-container > a {
     text-decoration: underline;
     font-family: SF-Pro-Display-Regular;
+    text-decoration: underline;
+}
+
+#title-container > a:visited {
+    color: white;
 }
 
 #task-container {
